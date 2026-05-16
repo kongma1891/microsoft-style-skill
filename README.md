@@ -38,11 +38,24 @@ It is not optimized for marketing copy, blog posts, or mobile-specific content.
 - Proper nouns, UI element names matched verbatim
 - The narrow set of title-style exceptions
 
-**Bold and italic usage:**
+**Bold usage (the rule most technical writers get wrong):**
 
-- Bold for UI elements, database names, titles, keyboard shortcuts, user input
-- Italic sparingly, for emphasis, math variables, and new terms on first mention
-- No ALL CAPS, no all-lowercase design choices
+Microsoft uses bold as a structural signal, not for emphasis. The skill enforces:
+
+- **Use bold for:** UI elements the customer interacts with (buttons, menu items, tab names, checkbox labels, dialog names, form field labels, pane names, palettes, toggles, windows when referenced by name), database names, titles inside body content, keyboard shortcuts (`Ctrl+Alt+Del`), key names (`F5`, `Spacebar`), commands, and user-typed input.
+- **Don't use bold for:** emphasis (use italics sparingly instead), entire sentences or paragraphs, "important" callouts (use Note / Tip / Warning admonition blocks), person names, or product names (capitalization handles those).
+- **Don't talk about the UI element type** unless clarity demands it. `Select Save` not `Click the Save button`. The label is bold; the type is implied.
+- **Match the UI exactly** for the bold label, including punctuation. Drop trailing colons and ellipses (`Select Save as` not `Select Save as…`).
+
+**Italic — sparingly:**
+
+- Emphasis (rarely; usually rewriting is better)
+- Mathematical constants and variables (`a² + b² = c²`)
+- New terms on first mention if you're going to define them immediately
+
+**Capitalization extras:**
+
+- No ALL CAPS for emphasis. No all-lowercase as a design choice. No internal capitalization (`AutoScale`, `e-Book`) unless it's an established brand name.
 
 **Voice and tone:**
 
