@@ -74,6 +74,66 @@ References:
 - **Use parallel structure** across sibling procedure headings: `Create a profile` / `Add an account` / `Delete a profile` — all imperative-verb start.
 - If an introductory sentence appears between the heading and the numbered list, make sure the introduction adds information the heading doesn't already convey. Don't restate the heading.
 
+### "Step N:" headings vs action headings — when to use which
+
+Microsoft uses `Step N:` headings only when the procedure mirrors a numbered wizard in the product UI itself. For example, the [Win32 Intune app deployment doc](https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-win32-add) uses `Step 1: App information`, `Step 2: Program`, etc. — those step numbers match the wizard's own tab labels.
+
+For everything else, use **sentence-case action headings**: `Register the application`, `Add API permissions`, `Grant admin consent`. The procedure's order is implied by the page structure — readers don't need `Step N:` framing to follow a sequence. Microsoft's [quickstart-register-app](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app) is the canonical example.
+
+When in doubt, look for the product UI wizard. No numbered wizard → no `Step N:` headings.
+
+```text
+✓ ## Register the application
+  (general admin procedure — no product wizard)
+
+✓ ## Step 1: App information
+  (matches the Win32 deploy wizard's tab labels exactly)
+
+✗ ## Step 1: Open App registrations in Azure
+  ## Step 2: Select New registration
+  ## Step 3: Enter a name
+  (these are clicks, not phases — collapse into one action heading)
+```
+
+### Heading should describe the section's outcome, not the first task within it
+
+If the heading is identical to the first numbered item inside, the heading is too granular. The heading names the *phase* of work; the numbered items spell out the clicks.
+
+```text
+✗ ### Step 7: Select Microsoft Graph
+  1. Select Microsoft Graph.
+
+✓ ### Step 2: Add Microsoft Graph permissions
+  1. On the app registration page select API Permissions.
+  2. Select Add a permission.
+  3. Select Microsoft Graph.
+  4. Select Application permissions.
+  ...
+```
+
+A good test: read the heading aloud, then read the first numbered item. If they say the same thing, the heading is at the wrong granularity.
+
+### Reference pages don't use Step headings
+
+A page that explains parameters, options, or configuration is a *reference*, not a procedure. Use H2 categories with H3 per item, not `Step N:` framing.
+
+```text
+✗ ### Step 4: Configure Sign-Ins Failure Only
+  - Required: No
+  - Default: TRUE
+
+✓ ## Sign-in data
+
+  ### AzureAD Sign-Ins Failure Only
+
+  **Required:** No
+  **Default:** TRUE
+
+  Determines whether successful sign-ins are available in the reports...
+```
+
+Reference content is for *lookup*, not for following in sequence — the reader needs to scan and jump, not iterate through steps. The page's purpose dictates the structure.
+
 ### Single-step procedures
 
 A one-step procedure doesn't necessarily need a numbered list. If you want format consistency with the surrounding multi-step procedures, use a bullet instead of a number — never `1.` alone.
